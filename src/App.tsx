@@ -1,12 +1,12 @@
 import React from "react";
-import "./App.css";
+import { St } from "./App.style";
 import Header from "./components/organisms/header/header";
 
 const App = () => {
   return (
-    <div className="App">
+    <St.PagekWidth>
       <Header />
-    </div>
+    </St.PagekWidth>
   );
 };
 

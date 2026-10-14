@@ -1,3 +1,7 @@
+:root {
+  --BG-color: rgb(255, 243, 227);
+}
+
 *,
 *::before,
 *::after {
@@ -31,6 +35,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background-color: var(--BG-color);
 }
 
 ul[class],
