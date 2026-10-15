@@ -6,7 +6,7 @@ import InfoIcon from "@mui/icons-material/Info";
 const dataButton: dataButtonType = {
   titleButton: "Информация о проекте",
   arialButton: "info",
-  icon: <InfoIcon />,
+  icon: <InfoIcon fontSize="large" />,
 };
 
 const Nav: React.FC = () => {

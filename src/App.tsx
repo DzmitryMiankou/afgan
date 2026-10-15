@@ -4,12 +4,8 @@ import Header from "./components/organisms/header/header";
 import customData from "./data.json";
 
 type MyKeys = "firstName" | "lastName" | "patronymic" | "mainText";
-export type TitleTs<S = string> = {
-  [K in MyKeys]: S;
-};
-type HeaderDataTS = {
-  biography: TitleTs;
-};
+export type TitleTs<S = string> = { [K in MyKeys]: S };
+type HeaderDataTS = { biography: TitleTs };
 
 const App = () => {
   const data: Array<HeaderDataTS> = customData;
