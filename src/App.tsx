@@ -8,8 +8,9 @@ type MyKeys = "firstName" | "lastName" | "patronymic" | "mainText";
 export type TitleTs<S = string> = { [K in MyKeys]: S };
 type HeaderDataTS = { biography: TitleTs };
 
-const App = () => {
-  const data: Array<HeaderDataTS> = customData;
+const App: React.FC = () => {
+  const data = customData as Array<HeaderDataTS>;
+
   return (
     <St.PagekWidth>
       <Header />

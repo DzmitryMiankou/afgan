@@ -1,5 +1,8 @@
 :root {
   --BG-color: rgb(254, 252, 252);
+  --BG-Header: rgb(245, 239, 231);
+  --Size-Wrapper-Max: 1400px;
+  --Size-Wrapper-min: 330px;
 }
 
 *,
@@ -31,7 +34,6 @@ dd {
 }
 
 body {
-  min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;

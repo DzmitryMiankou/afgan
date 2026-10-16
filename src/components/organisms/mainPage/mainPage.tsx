@@ -7,7 +7,8 @@ const MainPage: React.FC<{ biography: TitleTs }> = ({
 }) => {
   return (
     <St.Container>
-      <img style={{ maxWidth: "500px" }} src={Imge} alt="png" />
+      <link rel="preload" as="image" href={Imge} fetchPriority="high" />
+      <St.Img src={Imge} alt="png" fetchPriority="high" draggable="false" />
       <div>
         <p>{`${firstName} ${patronymic} ${lastName}`}</p>
         <p>{mainText}</p>

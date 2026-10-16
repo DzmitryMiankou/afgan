@@ -1,9 +1,14 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+export const Wrapper = css`
+  max-width: var(--Size-Wrapper-Max);
+  min-width: var(--Size-Wrapper-Min);
+  margin: auto;
+`;
 
 const PagekWidth = styled.div`
-  max-width: 1400px;
-  min-width: 330px;
-  margin: 0 auto;
+  display: block;
+  height: 100vh;
 `;
 
 export const St = { PagekWidth };

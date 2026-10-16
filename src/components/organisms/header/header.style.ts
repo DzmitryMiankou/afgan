@@ -1,13 +1,13 @@
 import styled from "styled-components";
+import { Wrapper } from "../../../App.style";
 
-const Header = styled.header``;
-
-const Title = styled.h1`
-  font-size: 50px;
+const Header = styled.header`
+  padding: 5px 0px;
+  ${Wrapper};
 `;
 
-const Text = styled.p`
-  font-size: 18px;
+const ColorHed = styled.header`
+  background-color: var(--BG-Header);
 `;
 
-export const St = { Header, Text, Title };
+export const St = { Header, ColorHed };

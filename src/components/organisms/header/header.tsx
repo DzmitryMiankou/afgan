@@ -3,9 +3,11 @@ import Nav from "../../molecules/nav/nav";
 
 const Header: React.FC = () => {
   return (
-    <St.Header>
-      <Nav />
-    </St.Header>
+    <St.ColorHed>
+      <St.Header>
+        <Nav />
+      </St.Header>
+    </St.ColorHed>
   );
 };
 
