@@ -14,11 +14,15 @@ const App: React.FC = () => {
   const data = customData as Array<HeaderDataTS>;
   const HeadRef = useRef<HTMLElement>(null);
   const { dimensions } = useSizeHTMLElement(HeadRef);
+  const MainPageData = {
+    biography: data[0].biography,
+    hightHeader: dimensions.height,
+  };
 
   return (
     <St.PagekWidth>
       <Header ref={HeadRef} />
-      <MainPage biography={data[0].biography} hightHeader={dimensions.height} />
+      <MainPage data={{ ...MainPageData }} />
     </St.PagekWidth>
   );
 };
