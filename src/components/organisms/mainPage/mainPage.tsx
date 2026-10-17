@@ -2,11 +2,13 @@ import { TitleTs } from "../../../App";
 import { St } from "./mainPage.style";
 import Imge from "../../../img/IMG3_7745.png";
 
-const MainPage: React.FC<{ biography: TitleTs }> = ({
+const MainPage: React.FC<{ biography: TitleTs; hightHeader: number }> = ({
   biography: { firstName, mainText, lastName, patronymic },
+  hightHeader,
 }) => {
+  console.log(hightHeader);
   return (
-    <St.Container>
+    <St.Container $hightHeader={hightHeader}>
       <link rel="preload" as="image" href={Imge} fetchPriority="high" />
       <St.Img src={Imge} alt="png" fetchPriority="high" draggable="false" />
       <div>

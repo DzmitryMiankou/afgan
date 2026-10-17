@@ -1,10 +1,11 @@
 import { St } from "./header.style";
 import Nav from "../../molecules/nav/nav";
+import { HeaderProps } from "../../../App";
 
-const Header: React.FC = () => {
+const Header: React.FC<HeaderProps> = ({ ref }) => {
   return (
     <St.ColorHed>
-      <St.Header>
+      <St.Header ref={ref}>
         <Nav />
       </St.Header>
     </St.ColorHed>

@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import { Wrapper } from "../../../App.style";
 
-const Container = styled.div`
+interface ContainerProps {
+  $hightHeader: number;
+}
+
+const Container = styled.div<ContainerProps>`
   display: flex;
   ${Wrapper};
   align-items: flex-end;
-  max-height: calc(100% - 104px);
+  max-height: calc(100% - ${(props) => props.$hightHeader}px);
   height: 100%;
 `;
 
