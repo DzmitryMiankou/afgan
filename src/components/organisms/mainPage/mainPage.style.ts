@@ -14,7 +14,6 @@ const Container = styled.div<ContainerProps>`
 `;
 
 const Img = styled.svg`
-  height: 98%;
   width: 100%;
 `;
 

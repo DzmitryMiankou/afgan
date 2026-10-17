@@ -13,6 +13,7 @@ const Nav: React.FC = () => {
   return (
     <St.Nav>
       <LogoSchool />
+      <St.LogoText>Памяти Дмитрия Карповича</St.LogoText>
       <Button dataButton={dataButton} />
     </St.Nav>
   );

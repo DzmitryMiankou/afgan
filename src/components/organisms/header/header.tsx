@@ -1,8 +1,10 @@
 import { St } from "./header.style";
 import Nav from "../../molecules/nav/nav";
-import { HeaderProps } from "../../../App";
+import { forwardRef } from "react";
 
-const Header: React.FC<HeaderProps> = ({ ref }) => {
+interface HeaderProps {}
+
+const Header = forwardRef<HTMLElement, HeaderProps>((_, ref) => {
   return (
     <St.ColorHed>
       <St.Header ref={ref}>
@@ -10,6 +12,6 @@ const Header: React.FC<HeaderProps> = ({ ref }) => {
       </St.Header>
     </St.ColorHed>
   );
-};
+});
 
 export default Header;

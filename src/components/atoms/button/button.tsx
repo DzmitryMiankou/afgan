@@ -1,3 +1,4 @@
+import React from "react";
 import { St } from "./button.styled";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
@@ -10,8 +11,10 @@ export type dataButtonType = WhileString & { icon: React.ReactElement };
 const Button: ButtonComponentType = ({
   dataButton: { arialButton, titleButton, icon },
 }) => {
+  const [open, setOpen] = React.useState<boolean>(false);
+  console.log(open);
   return (
-    <St.Button>
+    <St.Button onClick={() => setOpen(!open)}>
       <Tooltip aria-label={arialButton} title={titleButton}>
         <IconButton size="large">{icon}</IconButton>
       </Tooltip>
