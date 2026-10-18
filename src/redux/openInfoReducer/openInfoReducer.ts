@@ -1,30 +1,21 @@
 const SETOPEN = "SETOPEN_drbgtr$$_RF_1514";
 
-interface InitialStateType {
-  data: boolean;
-}
+type TypeInfo = "" | "info" | "memory";
+export const setOpenReducer = (data: boolean, infType: TypeInfo) =>
+  ({ type: SETOPEN, data, infType }) as const;
+const initialState: { data: boolean } = { data: false };
 
-const initialState: InitialStateType = { data: false };
-
-interface TypeAction {
-  type: typeof SETOPEN;
-  data: boolean;
-}
-
-const openInfoReducer = (state = initialState, action: TypeAction) => {
+const openInfoReducer = (
+  state = initialState,
+  action: ReturnType<typeof setOpenReducer>,
+) => {
   switch (action.type) {
     case SETOPEN: {
-      return { data: action.data };
+      return { data: action.data, infType: action.infType };
     }
     default:
       return state;
   }
 };
-
-export const setOpenReducer = (data: boolean) =>
-  ({
-    type: SETOPEN,
-    data,
-  }) as const;
 
 export default openInfoReducer;

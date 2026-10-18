@@ -18,7 +18,9 @@ const Button: ButtonComponentType = ({
   const dispatchStore = useDispatch<AppDispatch>();
 
   return (
-    <St.Button onClick={() => dispatchStore(setOpenReducer(!openStore))}>
+    <St.Button
+      onClick={() => dispatchStore(setOpenReducer(!openStore, "info"))}
+    >
       <Tooltip aria-label={arialButton} title={titleButton}>
         <IconButton size="large">{icon}</IconButton>
       </Tooltip>

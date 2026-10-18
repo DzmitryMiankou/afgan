@@ -1,5 +1,4 @@
 import * as React from "react";
-import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
@@ -7,11 +6,14 @@ import DialogTitle from "@mui/material/DialogTitle";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../redux/store";
 import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
+import CloseIcon from "@mui/icons-material/Close";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
 
-export default function ScrollDialog() {
+const ScrollDialog: React.FC = () => {
   const openWindow = useSelector((state: RootState) => state.openInfo.data);
   const dispatchStore = useDispatch<AppDispatch>();
-  const handleClose = () => dispatchStore(setOpenReducer(false));
+  const handleClose = () => dispatchStore(setOpenReducer(false, ""));
 
   return (
     <React.Fragment>
@@ -21,7 +23,29 @@ export default function ScrollDialog() {
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
       >
-        <DialogTitle id="scroll-dialog-title">Информация о проекте</DialogTitle>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <DialogTitle id="scroll-dialog-title">
+            Информация о проекте
+          </DialogTitle>
+          <DialogActions>
+            <Tooltip title="Закрыть окно">
+              <IconButton
+                onClick={handleClose}
+                aria-label="delete"
+                size="large"
+              >
+                <CloseIcon fontSize="inherit" />
+              </IconButton>
+            </Tooltip>
+          </DialogActions>
+        </div>
+
         <DialogContent>
           "Звание: Сержант Фамилия: Карпович Имя: Дмитрий Отчество:
           Константинович Дата рождения: 30.08.1967 Место рождения: Беларусь,
@@ -67,10 +91,8 @@ export default function ScrollDialog() {
           Дополнительная информация: погиб в Афганистане Источник информации: По
           данным РИК и РВК"
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose}>Закрыть</Button>
-        </DialogActions>
       </Dialog>
     </React.Fragment>
   );
-}
+};
+export default ScrollDialog;

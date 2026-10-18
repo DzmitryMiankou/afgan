@@ -1,16 +1,14 @@
 import styled, { css } from "styled-components";
 import { Wrapper } from "../../../App.style";
 
-interface ContainerProps {
-  $hightHeader: number;
-}
-
 export const Coursor = css`
   cursor: pointer;
   transition: ease-in-out 0.2s;
 `;
 
-const Container = styled.div<ContainerProps>`
+const Container = styled.div<{
+  $hightHeader: number;
+}>`
   ${Wrapper};
   max-height: calc(100% - ${(props) => props.$hightHeader}px);
   height: 100%;
@@ -20,12 +18,16 @@ const Container = styled.div<ContainerProps>`
 
 const Img = styled.svg`
   width: 100%;
+  height: 90%;
 `;
 
 const TextSvg = styled.text`
-  font-size: 80px;
-  font-weight: 700;
-  fill: #483e21;
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  font-weight: 500;
+  fill: #664116;
+  text-transform: uppercase;
 `;
 
 const arr: Array<number> = [0.2724, -0.01787451, 0.01787451, 0.2724].map(

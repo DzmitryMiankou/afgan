@@ -2,8 +2,9 @@ import React from "react";
 import { TitleTs } from "../../../App";
 import { St } from "./mainPage.style";
 
-import SEDG from "../../../img/IMG3_7745.jpg";
+import Person from "../../../img/IMG3_7745.jpg";
 import SEDG2 from "../../../img/post-letter-boxes-mailbox-blue.png";
+import Tooltip from "@mui/material/Tooltip";
 
 interface MainPageProps {
   data: {
@@ -11,6 +12,20 @@ interface MainPageProps {
     hightHeader: number;
   };
 }
+
+type SvgWrapperProps = React.SVGProps<SVGGElement> & {
+  children: React.ReactNode;
+};
+
+const SvgWrapper = React.forwardRef<SVGGElement, SvgWrapperProps>(
+  ({ children, ...props }, ref) => {
+    return (
+      <g ref={ref} {...props}>
+        {children}
+      </g>
+    );
+  },
+);
 
 const MainPage: React.FC<MainPageProps> = ({ data }) => {
   const { hightHeader, biography } = data;
@@ -28,11 +43,13 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
         enableBackground="new 0 0 1366 768"
         xmlSpace="preserve"
       >
-        <St.PImage>
-          <defs>
-            <path
-              id="XMLID_00000008124907572493032830000013460031048368785048_"
-              d="M377.9,768c-8.9,0-17.7,0-26.6,0c0-0.8-0.4-1.4-1.1-1.7
+        <Tooltip title="Информация обо мне" arrow>
+          <SvgWrapper>
+            <St.PImage>
+              <defs>
+                <path
+                  id="XMLID_00000008124907572493032830000013460031048368785048_"
+                  d="M377.9,768c-8.9,0-17.7,0-26.6,0c0-0.8-0.4-1.4-1.1-1.7
 			c-1.2-0.4-2.4-0.8-3.7-1.2c-0.7-0.2-1.3,0.2-1.4,1c-0.1,0.6-0.2,1.3-0.2,1.9c-97.3,0-194.6,0-291.9,0c0.5-3.8,1.6-10,3.4-13.5
 			c0.5-0.9-0.5-6.9-0.8-10.3c-1.4-0.9-2.5-1.3-3.9-2c-0.4-0.2-1.7-0.9-2.2-1c-0.8,2.3-5.4,23.5-6.2,26.9c-5.7,0-8.6,0-14.4,0
 			c0.1-1.4,4.3-26.1,4.8-28.7c0.1-0.5,0-1.1-0.1-1.6c-1.1-0.3-1.9-0.2-2.8-0.1c-4.8,0.7-9.6,1.3-14.4,1.9c-1.4,0.2-2.8,0.2-4.2,0.2
@@ -96,39 +113,55 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
 			C349.6,753.3,347.9,755.3,348.5,756.9z M86.8,424.4c0,1,0,1.5,0.1,2c0.1,0.6,0.5,1,1.1,1c0.6,0,1.1-0.3,1.3-0.9
 			c0.4-1.5,0.1-2.9-0.2-4.3c-0.1-0.3-0.5-0.6-0.9-0.7c-0.4-0.1-0.8,0.2-0.9,0.6C87,423,86.9,424,86.8,424.4z M332.7,442
 			c-0.1,0.4-0.2,0.8-0.1,1.1c0.2,1.2,0.1,2.5,0.5,4c0.7-0.7,0.7-1.4,0.7-2C333.6,444.1,333.9,442.9,332.7,442z"
-            />
-          </defs>
-          <use
-            xlinkHref="#XMLID_00000008124907572493032830000013460031048368785048_"
-            overflow="visible"
-            fill="#FFFFFF"
-          />
-          <clipPath id="XMLID_00000054949487765982062790000014728706322811264175_">
-            <use
-              xlinkHref="#XMLID_00000008124907572493032830000013460031048368785048_"
+                />
+              </defs>
+              <use
+                xlinkHref="#XMLID_00000008124907572493032830000013460031048368785048_"
+                overflow="visible"
+                fill="#FFFFFF"
+              />
+              <clipPath id="XMLID_00000054949487765982062790000014728706322811264175_">
+                <use
+                  xlinkHref="#XMLID_00000008124907572493032830000013460031048368785048_"
+                  overflow="visible"
+                />
+              </clipPath>
+              <g
+                transform="matrix(1 0 0 1 0 0)"
+                clipPath="url(#XMLID_00000054949487765982062790000014728706322811264175_)"
+              >
+                <image
+                  overflow="visible"
+                  width="3598"
+                  height="6169"
+                  xlinkHref={Person}
+                  transform="matrix(0.1243 0 0 0.1243 -8.9252 2.8356)"
+                ></image>
+              </g>
+            </St.PImage>
+          </SvgWrapper>
+        </Tooltip>
+        <St.TextSvg transform="matrix(1 0 0 1 500 80)">
+          <tspan x="0" dy="0">
+            Эта история не о генерале,
+          </tspan>
+          <tspan x="0" dy="1.5em">
+            а об обычном сержанте
+          </tspan>
+          <tspan x="0" dy="1.5em">
+            афганской войны
+          </tspan>
+        </St.TextSvg>
+        <Tooltip title="Мои письма" arrow>
+          <SvgWrapper>
+            <St.EmailImage
               overflow="visible"
-            />
-          </clipPath>
-          <g
-            transform="matrix(1 0 0 1 0 0)"
-            clipPath="url(#XMLID_00000054949487765982062790000014728706322811264175_)"
-          >
-            <image
-              overflow="visible"
-              width="3598"
-              height="6169"
-              xlinkHref={SEDG}
-              transform="matrix(0.1243 0 0 0.1243 -8.9252 2.8356)"
-            ></image>
-          </g>
-        </St.PImage>
-        <St.TextSvg transform="matrix(1 0 0 1 400 80)"></St.TextSvg>
-        <St.EmailImage
-          overflow="visible"
-          width="782"
-          height="1213"
-          xlinkHref={SEDG2}
-        ></St.EmailImage>
+              width="782"
+              height="1213"
+              xlinkHref={SEDG2}
+            ></St.EmailImage>
+          </SvgWrapper>
+        </Tooltip>
       </St.Img>
     </St.Container>
   );
