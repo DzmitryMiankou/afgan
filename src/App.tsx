@@ -5,6 +5,7 @@ import customData from "./data.json";
 import MainPage from "./components/organisms/mainPage/mainPage";
 import { useRef } from "react";
 import { useSizeHTMLElement } from "./hook/useSizeHTMLElement";
+import ScrollDialog from "./components/molecules/scrollDialog/scrollDialog";
 
 type MyKeys = "firstName" | "lastName" | "patronymic" | "mainText";
 export type TitleTs<S = string> = { [K in MyKeys]: S };
@@ -23,6 +24,7 @@ const App: React.FC = () => {
     <St.PagekWidth>
       <Header ref={HeadRef} />
       <MainPage data={{ ...MainPageData }} />
+      <ScrollDialog />
     </St.PagekWidth>
   );
 };

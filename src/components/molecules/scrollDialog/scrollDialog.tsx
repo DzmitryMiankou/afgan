@@ -1,65 +1,74 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
-import Dialog, { DialogProps } from "@mui/material/Dialog";
+import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../../../redux/store";
+import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
 
 export default function ScrollDialog() {
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState<DialogProps["scroll"]>("paper");
-
-  const handleClickOpen = (scrollType: DialogProps["scroll"]) => () => {
-    setOpen(true);
-    setScroll(scrollType);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const descriptionElementRef = React.useRef<HTMLElement>(null);
-  React.useEffect(() => {
-    if (open) {
-      const { current: descriptionElement } = descriptionElementRef;
-      if (descriptionElement !== null) {
-        descriptionElement.focus();
-      }
-    }
-  }, [open]);
+  const openWindow = useSelector((state: RootState) => state.openInfo.data);
+  const dispatchStore = useDispatch<AppDispatch>();
+  const handleClose = () => dispatchStore(setOpenReducer(false));
 
   return (
     <React.Fragment>
-      <Button onClick={handleClickOpen("paper")}>scroll=paper</Button>
-      <Button onClick={handleClickOpen("body")}>scroll=body</Button>
       <Dialog
-        open={open}
+        open={openWindow}
         onClose={handleClose}
-        scroll={scroll}
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
       >
-        <DialogTitle id="scroll-dialog-title">Subscribe</DialogTitle>
-        <DialogContent dividers={scroll === "paper"}>
-          <DialogContentText
-            id="scroll-dialog-description"
-            ref={descriptionElementRef}
-            tabIndex={-1}
-          >
-            {[...new Array(50)]
-              .map(
-                () => `Cras mattis consectetur purus sit amet fermentum.
-Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-              )
-              .join("\n")}
-          </DialogContentText>
+        <DialogTitle id="scroll-dialog-title">Информация о проекте</DialogTitle>
+        <DialogContent>
+          "Звание: Сержант Фамилия: Карпович Имя: Дмитрий Отчество:
+          Константинович Дата рождения: 30.08.1967 Место рождения: Беларусь,
+          Минская, Молодечненский, Молодечно, город Место призыва: Беларусь,
+          Минская, Молодечненский, Молодечненский РВК Дата гибели: 27.10.1988
+          Категория погибшего: Военнослужащий Номер захоронения: 1568 Место
+          захоронения: Беларусь, Минская, Молодечненский, Молодечно, город
+          Дополнительная информация: погиб в Афганистане Источник информации: По
+          данным РИК и РВК""Звание: Сержант Фамилия: Карпович Имя: Дмитрий
+          Отчество: Константинович Дата рождения: 30.08.1967 Место рождения:
+          Беларусь, Минская, Молодечненский, Молодечно, город Место призыва:
+          Беларусь, Минская, Молодечненский, Молодечненский РВК Дата гибели:
+          27.10.1988 Категория погибшего: Военнослужащий Номер захоронения: 1568
+          Место захоронения: Беларусь, Минская, Молодечненский, Молодечно, город
+          Дополнительная информация: погиб в Афганистане Источник информации: По
+          данным РИК и РВК""Звание: Сержант Фамилия: Карпович Имя: Дмитрий
+          Отчество: Константинович Дата рождения: 30.08.1967 Место рождения:
+          Беларусь, Минская, Молодечненский, Молодечно, город Место призыва:
+          Беларусь, Минская, Молодечненский, Молодечненский РВК Дата гибели:
+          27.10.1988 Категория погибшего: Военнослужащий Номер захоронения: 1568
+          Место захоронения: Беларусь, Минская, Молодечненский, Молодечно, город
+          Дополнительная информация: погиб в Афганистане Источник информации: По
+          данным РИК и РВК""Звание: Сержант Фамилия: Карпович Имя: Дмитрий
+          Отчество: Константинович Дата рождения: 30.08.1967 Место рождения:
+          Беларусь, Минская, Молодечненский, Молодечно, город Место призыва:
+          Беларусь, Минская, Молодечненский, Молодечненский РВК Дата гибели:
+          27.10.1988 Категория погибшего: Военнослужащий Номер захоронения: 1568
+          Место захоронения: Беларусь, Минская, Молодечненский, Молодечно, город
+          Дополнительная информация: погиб в Афганистане Источник информации: По
+          данным РИК и РВК""Звание: Сержант Фамилия: Карпович Имя: Дмитрий
+          Отчество: Константинович Дата рождения: 30.08.1967 Место рождения:
+          Беларусь, Минская, Молодечненский, Молодечно, город Место призыва:
+          Беларусь, Минская, Молодечненский, Молодечненский РВК Дата гибели:
+          27.10.1988 Категория погибшего: Военнослужащий Номер захоронения: 1568
+          Место захоронения: Беларусь, Минская, Молодечненский, Молодечно, город
+          Дополнительная информация: погиб в Афганистане Источник информации: По
+          данным РИК и РВК""Звание: Сержант Фамилия: Карпович Имя: Дмитрий
+          Отчество: Константинович Дата рождения: 30.08.1967 Место рождения:
+          Беларусь, Минская, Молодечненский, Молодечно, город Место призыва:
+          Беларусь, Минская, Молодечненский, Молодечненский РВК Дата гибели:
+          27.10.1988 Категория погибшего: Военнослужащий Номер захоронения: 1568
+          Место захоронения: Беларусь, Минская, Молодечненский, Молодечно, город
+          Дополнительная информация: погиб в Афганистане Источник информации: По
+          данным РИК и РВК"
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Subscribe</Button>
+          <Button onClick={handleClose}>Закрыть</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>

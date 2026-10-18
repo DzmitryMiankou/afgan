@@ -3,6 +3,7 @@ import { TitleTs } from "../../../App";
 import { St } from "./mainPage.style";
 
 import SEDG from "../../../img/IMG3_7745.jpg";
+import SEDG2 from "../../../img/post-letter-boxes-mailbox-blue.png";
 
 interface MainPageProps {
   data: {
@@ -122,10 +123,15 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
           </g>
         </St.PImage>
         <St.TextSvg transform="matrix(1 0 0 1 400 80)"></St.TextSvg>
+        <St.EmailImage
+          overflow="visible"
+          width="782"
+          height="1213"
+          xlinkHref={SEDG2}
+        ></St.EmailImage>
       </St.Img>
     </St.Container>
   );
 };
 
 export default MainPage;
-//filter: "drop-shadow(0px 80px 50px rgba(0, 0, 50, 0.5))",
