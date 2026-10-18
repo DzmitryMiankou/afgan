@@ -145,10 +145,10 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
           <tspan x="0" dy="0">
             Эта история не о генерале,
           </tspan>
-          <tspan x="0" dy="1.5em">
+          <tspan x="0" dy="1.3em">
             а об обычном сержанте
           </tspan>
-          <tspan x="0" dy="1.5em">
+          <tspan x="0" dy="1.3em">
             афганской войны
           </tspan>
         </St.TextSvg>

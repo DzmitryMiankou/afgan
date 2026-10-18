@@ -1,14 +1,14 @@
 import { St } from "./nav.style";
 import LogoSchool from "../../atoms/LogoSchool/logoSchool";
 import Button, { dataButtonType } from "../../atoms/button/button";
-import InfoIcon from "@mui/icons-material/Info";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import Link from "@mui/material/Link";
 import Tooltip from "@mui/material/Tooltip";
 
 const dataButton: dataButtonType = {
   titleButton: "Информация о проекте",
   arialButton: "info",
-  icon: <InfoIcon fontSize="large" />,
+  icon: <InfoOutlinedIcon fontSize="large" />,
 };
 
 const Nav: React.FC = () => {

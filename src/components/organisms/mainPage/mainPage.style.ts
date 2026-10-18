@@ -27,7 +27,6 @@ const TextSvg = styled.text`
   font-size: 50px;
   font-weight: 500;
   fill: #664116;
-  text-transform: uppercase;
 `;
 
 const arr: Array<number> = [0.2724, -0.01787451, 0.01787451, 0.2724].map(
