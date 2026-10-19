@@ -151,7 +151,7 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
             Эта история не о генерале,
           </tspan>
           <tspan x="0" dy="1.3em">
-            а об сержанте
+            а о сержанте
             <Tooltip title="История конфликта">
               <St.WarText onClick={() => setStore("war")}>
                 {" "}

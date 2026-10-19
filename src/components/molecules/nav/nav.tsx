@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../redux/store";
 import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
 import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 
 const dataButton: dataButtonType = {
   titleButton: "Информация о проекте",
@@ -21,6 +22,13 @@ const istData: dataButtonType = {
   arialButton: "history",
   icon: <AutoStoriesOutlinedIcon fontSize="large" />,
   infoType: "history",
+};
+
+const schoolData: dataButtonType = {
+  titleButton: "Методика",
+  arialButton: "schoolData",
+  icon: <SchoolOutlinedIcon fontSize="large" />,
+  infoType: "schoolData",
 };
 
 const Nav: React.FC<{ name: Array<string> }> = (name) => {
@@ -45,6 +53,7 @@ const Nav: React.FC<{ name: Array<string> }> = (name) => {
       </Tooltip>
       <div style={{ display: "flex", gap: "5px", marginLeft: "5px" }}>
         <Button dataButton={istData} />
+        <Button dataButton={schoolData} />
         <Button dataButton={dataButton} />
       </div>
     </St.Nav>

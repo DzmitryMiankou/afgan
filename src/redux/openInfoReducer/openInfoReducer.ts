@@ -8,7 +8,8 @@ export type TypeInfo =
   | "person"
   | "mail"
   | "war"
-  | "history";
+  | "history"
+  | "schoolData"
 type StateType = { data: boolean; infType: TypeInfo };
 const initialState: StateType = { data: false, infType: `` };
 type InfoActions =
