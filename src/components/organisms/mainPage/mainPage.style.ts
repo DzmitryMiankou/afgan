@@ -50,4 +50,13 @@ const PImage = styled.g`
   }
 `;
 
-export const St = { PImage, EmailImage, Container, Img, TextSvg };
+const WarText = styled.tspan`
+  cursor: pointer;
+  fill: #a53002;
+  transition: 0.2s;
+  &:hover {
+    fill: #ff5c1b;
+  }
+`;
+
+export const St = { PImage, EmailImage, Container, Img, TextSvg, WarText };

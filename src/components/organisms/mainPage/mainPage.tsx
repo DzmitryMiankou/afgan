@@ -5,7 +5,10 @@ import SEDG2 from "../../../img/post-letter-boxes-mailbox-blue.png";
 import Tooltip from "@mui/material/Tooltip";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../redux/store";
-import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
+import {
+  setOpenReducer,
+  TypeInfo,
+} from "../../../redux/openInfoReducer/openInfoReducer";
 
 interface MainPageProps {
   data: {
@@ -30,6 +33,8 @@ const SvgWrapper = React.forwardRef<SVGGElement, SvgWrapperProps>(
 const MainPage: React.FC<MainPageProps> = ({ data }) => {
   const { hightHeader } = data;
   const dispatchStore = useDispatch<AppDispatch>();
+  const setStore = (type: TypeInfo) =>
+    dispatchStore(setOpenReducer(true, type));
 
   return (
     <St.Container $hightHeader={hightHeader}>
@@ -43,11 +48,9 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
         enableBackground="new 0 0 1366 768"
         xmlSpace="preserve"
       >
-        <Tooltip title="Информация обо мне" arrow>
+        <Tooltip title="Информация обо мне">
           <SvgWrapper>
-            <St.PImage
-              onClick={() => dispatchStore(setOpenReducer(true, "person"))}
-            >
+            <St.PImage onClick={() => setStore("person")}>
               <defs>
                 <path
                   id="XMLID_00000008124907572493032830000013460031048368785048_"
@@ -148,16 +151,19 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
             Эта история не о генерале,
           </tspan>
           <tspan x="0" dy="1.3em">
-            а об обычном сержанте
-          </tspan>
-          <tspan x="0" dy="1.3em">
-            афганской войны
+            а об сержанте
+            <Tooltip title="История конфликта">
+              <St.WarText onClick={() => setStore("war")}>
+                {" "}
+                афганской войны
+              </St.WarText>
+            </Tooltip>
           </tspan>
         </St.TextSvg>
-        <Tooltip title="Мои письма" arrow>
+        <Tooltip title="Мои письма">
           <SvgWrapper>
             <St.EmailImage
-              onClick={() => dispatchStore(setOpenReducer(true, "mail"))}
+              onClick={() => setStore("mail")}
               overflow="visible"
               width="782"
               height="1213"
