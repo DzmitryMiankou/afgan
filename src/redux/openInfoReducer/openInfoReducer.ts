@@ -1,7 +1,14 @@
 const SETOPEN = "SETOPEN_drbgtr$$_RF_1514";
 const SETCLOUSE = "SETCLOUSE_drbgtr$$_RF_1514";
 
-export type TypeInfo = `` | "info" | "memory" | "person" | "mail" | "war";
+export type TypeInfo =
+  | ``
+  | "info"
+  | "memory"
+  | "person"
+  | "mail"
+  | "war"
+  | "history";
 type StateType = { data: boolean; infType: TypeInfo };
 const initialState: StateType = { data: false, infType: `` };
 type InfoActions =

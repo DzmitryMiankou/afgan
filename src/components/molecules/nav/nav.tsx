@@ -7,11 +7,20 @@ import Tooltip from "@mui/material/Tooltip";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../redux/store";
 import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
+import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 
 const dataButton: dataButtonType = {
   titleButton: "Информация о проекте",
   arialButton: "info",
   icon: <InfoOutlinedIcon fontSize="large" />,
+  infoType: "info",
+};
+
+const istData: dataButtonType = {
+  titleButton: "Источники",
+  arialButton: "history",
+  icon: <AutoStoriesOutlinedIcon fontSize="large" />,
+  infoType: "history",
 };
 
 const Nav: React.FC<{ name: Array<string> }> = (name) => {
@@ -34,7 +43,10 @@ const Nav: React.FC<{ name: Array<string> }> = (name) => {
           <St.LogoText>{text}</St.LogoText>
         </Link>
       </Tooltip>
-      <Button dataButton={dataButton} />
+      <div style={{ display: "flex", gap: "5px", marginLeft: "5px" }}>
+        <Button dataButton={istData} />
+        <Button dataButton={dataButton} />
+      </div>
     </St.Nav>
   );
 };
