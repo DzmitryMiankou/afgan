@@ -3,6 +3,9 @@ import { St } from "./mainPage.style";
 import Person from "../../../img/IMG3_7745.jpg";
 import SEDG2 from "../../../img/post-letter-boxes-mailbox-blue.png";
 import Tooltip from "@mui/material/Tooltip";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../../redux/store";
+import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
 
 interface MainPageProps {
   data: {
@@ -26,6 +29,7 @@ const SvgWrapper = React.forwardRef<SVGGElement, SvgWrapperProps>(
 
 const MainPage: React.FC<MainPageProps> = ({ data }) => {
   const { hightHeader } = data;
+  const dispatchStore = useDispatch<AppDispatch>();
 
   return (
     <St.Container $hightHeader={hightHeader}>
@@ -41,7 +45,9 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
       >
         <Tooltip title="Информация обо мне" arrow>
           <SvgWrapper>
-            <St.PImage>
+            <St.PImage
+              onClick={() => dispatchStore(setOpenReducer(true, "person"))}
+            >
               <defs>
                 <path
                   id="XMLID_00000008124907572493032830000013460031048368785048_"
@@ -151,6 +157,7 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
         <Tooltip title="Мои письма" arrow>
           <SvgWrapper>
             <St.EmailImage
+              onClick={() => dispatchStore(setOpenReducer(true, "mail"))}
               overflow="visible"
               width="782"
               height="1213"

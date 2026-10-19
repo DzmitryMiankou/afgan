@@ -5,20 +5,20 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogTitle from "@mui/material/DialogTitle";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../../../redux/store";
-import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
+import { setClouse } from "../../../redux/openInfoReducer/openInfoReducer";
 import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 
 const ScrollDialog: React.FC = () => {
-  const openWindow = useSelector((state: RootState) => state.openInfo.data);
+  const openWindow = useSelector((state: RootState) => state.openInfo);
   const dispatchStore = useDispatch<AppDispatch>();
-  const handleClose = () => dispatchStore(setOpenReducer(false, ""));
+  const handleClose = () => dispatchStore(setClouse(false));
 
   return (
     <React.Fragment>
       <Dialog
-        open={openWindow}
+        open={openWindow.data}
         onClose={handleClose}
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
@@ -31,7 +31,7 @@ const ScrollDialog: React.FC = () => {
           }}
         >
           <DialogTitle id="scroll-dialog-title">
-            Информация о проекте
+            {`Информация о проекте ${openWindow.infType}`}
           </DialogTitle>
           <DialogActions>
             <Tooltip title="Закрыть окно">

@@ -2,8 +2,8 @@ import React from "react";
 import { St } from "./button.styled";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../../../redux/store";
+import { useDispatch } from "react-redux";
+import { AppDispatch } from "../../../redux/store";
 import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
 
 type ButtonComponentType = React.FC<{ dataButton: dataButtonType }>;
@@ -14,13 +14,10 @@ export type dataButtonType = WhileString & { icon: React.ReactElement };
 const Button: ButtonComponentType = ({
   dataButton: { arialButton, titleButton, icon },
 }) => {
-  const openStore = useSelector((state: RootState) => state.openInfo.data);
   const dispatchStore = useDispatch<AppDispatch>();
 
   return (
-    <St.Button
-      onClick={() => dispatchStore(setOpenReducer(!openStore, "info"))}
-    >
+    <St.Button onClick={() => dispatchStore(setOpenReducer(true, "info"))}>
       <Tooltip aria-label={arialButton} title={titleButton}>
         <IconButton size="large">{icon}</IconButton>
       </Tooltip>
