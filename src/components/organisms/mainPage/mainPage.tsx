@@ -30,6 +30,8 @@ const SvgWrapper = React.forwardRef<SVGGElement, SvgWrapperProps>(
   },
 );
 
+const ColorTimline = { bgTool: "#ffdebd" };
+
 const MainPage: React.FC<MainPageProps> = ({ data }) => {
   const { hightHeader } = data;
   const dispatchStore = useDispatch<AppDispatch>();
@@ -123,7 +125,7 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
               <use
                 xlinkHref="#XMLID_00000008124907572493032830000013460031048368785048_"
                 overflow="visible"
-                fill="#FFFFFF"
+                fill={ColorTimline.bgTool}
               />
               <clipPath id="XMLID_00000054949487765982062790000014728706322811264175_">
                 <use
@@ -171,6 +173,126 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
             ></St.EmailImage>
           </SvgWrapper>
         </Tooltip>
+        <St.PTimline
+          x="924.1"
+          y="620.5"
+          opacity="0.25"
+          fill="#0000FF"
+          width="334.8"
+          height="26.1"
+        />
+        <line
+          fill="none"
+          stroke="#000000"
+          strokeWidth="6"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeMiterlimit="10"
+          x1="924.1"
+          y1="646.7"
+          x2="1300.7"
+          y2="646.7"
+        />
+        <circle
+          fill="#F15A24"
+          stroke="#000000"
+          strokeMiterlimit="10"
+          cx="924.3"
+          cy="646.5"
+          r="6.8"
+        />
+        <circle
+          fill="#F15A24"
+          stroke="#000000"
+          strokeMiterlimit="10"
+          cx="1120.6"
+          cy="646.7"
+          r="6.8"
+        />
+        <circle
+          fill="#F15A24"
+          stroke="#000000"
+          strokeMiterlimit="10"
+          cx="1188.8"
+          cy="646.7"
+          r="6.8"
+        />
+        <circle
+          fill="#F15A24"
+          stroke="#000000"
+          strokeMiterlimit="10"
+          cx="1258.9"
+          cy="646.7"
+          r="6.8"
+        />
+        <circle
+          fill="#F15A24"
+          stroke="#000000"
+          strokeMiterlimit="10"
+          cx="1300.7"
+          cy="646.5"
+          r="6.8"
+        />
+        <St.TextTimline>
+          <path
+            fill={ColorTimline.bgTool}
+            stroke="#F15A24"
+            strokeMiterlimit="10"
+            d="M945.1,629.8h-40.6c-6.6,0-12-5.4-12-12V609c0-6.6,5.4-12,12-12
+	h40.6c6.6,0,12,5.4,12,12v8.8C957.1,624.4,951.7,629.8,945.1,629.8z"
+          />
+          <text transform="matrix(1 0 0 1 897.8677 622.4731)" fontSize="24px">
+            1967
+          </text>
+        </St.TextTimline>
+        <St.TextTimline>
+          <path
+            fill={ColorTimline.bgTool}
+            stroke="#F15A24"
+            strokeMiterlimit="10"
+            d="M1214.6,701.2H1174c-6.6,0-12-5.4-12-12v-8.8c0-6.6,5.4-12,12-12
+	h40.6c6.6,0,12,5.4,12,12v8.8C1226.6,695.8,1221.2,701.2,1214.6,701.2z"
+          />
+          <text transform="matrix(1 0 0 1 1167.3667 693.8015)" fontSize="24px">
+            1986
+          </text>
+        </St.TextTimline>
+        <St.TextTimline>
+          <path
+            fill={ColorTimline.bgTool}
+            stroke="#F15A24"
+            strokeMiterlimit="10"
+            d="M1325.6,701.2h-40.6c-6.6,0-12-5.4-12-12v-8.8c0-6.6,5.4-12,12-12
+	h40.6c6.6,0,12,5.4,12,12v8.8C1337.6,695.8,1332.2,701.2,1325.6,701.2z"
+          />
+          <text transform="matrix(1 0 0 1 1278.326 693.8015)" fontSize="24px">
+            1989
+          </text>
+        </St.TextTimline>
+        <St.TextTimline>
+          <path
+            fill={ColorTimline.bgTool}
+            stroke="#F15A24"
+            strokeMiterlimit="10"
+            d="M1140.6,629.8H1100c-6.6,0-12-5.4-12-12V609c0-6.6,5.4-12,12-12
+	h40.6c6.6,0,12,5.4,12,12v8.8C1152.6,624.4,1147.2,629.8,1140.6,629.8z"
+          />
+          <text transform="matrix(1 0 0 1 1093.3942 622.4731)" fontSize="24px">
+            1984
+          </text>
+        </St.TextTimline>
+        <St.TextTimline>
+          <path
+            fill={ColorTimline.bgTool}
+            stroke="#F15A24"
+            strokeMiterlimit="10"
+            d="M1278.7,629.8h-40.6c-6.6,0-12-5.4-12-12V609c0-6.6,5.4-12,12-12
+	h40.6c6.6,0,12,5.4,12,12v8.8C1290.7,624.4,1285.3,629.8,1278.7,629.8z"
+          />
+          <text transform="matrix(1 0 0 1 1231.4915 622.4731)" fontSize="24px">
+            1988
+          </text>
+        </St.TextTimline>
       </St.Img>
     </St.Container>
   );

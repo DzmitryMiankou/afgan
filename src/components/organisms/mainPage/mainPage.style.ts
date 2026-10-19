@@ -59,4 +59,27 @@ const WarText = styled.tspan`
   }
 `;
 
-export const St = { PImage, EmailImage, Container, Img, TextSvg, WarText };
+const TextTimline = styled.g`
+  transition: 0.2s;
+  &:hover {
+    fill: #b84400;
+  }
+`;
+
+const PTimline = styled.rect`
+  transition: 0.2s;
+  &:hover {
+    fill: #2fff00;
+  }
+`;
+
+export const St = {
+  PImage,
+  EmailImage,
+  Container,
+  Img,
+  TextSvg,
+  WarText,
+  TextTimline,
+  PTimline,
+};
