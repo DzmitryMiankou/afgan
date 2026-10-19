@@ -19,10 +19,11 @@ const App: React.FC = () => {
     biography: data[0].biography,
     hightHeader: dimensions.height,
   };
+  const { lastName, firstName, patronymic } = MainPageData.biography;
 
   return (
     <St.PagekWidth>
-      <Header ref={HeadRef} />
+      <Header ref={HeadRef} name={[lastName, firstName, patronymic]} />
       <MainPage data={{ ...MainPageData }} />
       <ScrollDialog />
     </St.PagekWidth>

@@ -17,12 +17,12 @@ const Nav = styled.nav`
 `;
 
 const LogoText = styled.p`
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
   text-align: center;
   color: #5f4100;
   white-space: nowrap;
-  font-weight: 700;
+  font-weight: 600;
 `;
 
 export const St = { Nav, LogoText };

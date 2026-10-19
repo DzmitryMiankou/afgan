@@ -17,6 +17,10 @@ const ButtonData: ButtonType = {
 
 const LogoSchool: React.FC = () => {
   const { ariaLabel, title, href, sizeLogo } = ButtonData as ButtonType;
+  const ColorLogo = {
+    yel: "#f7da67",
+    red: "#c94a46",
+  };
 
   return (
     <Tooltip aria-label={ariaLabel} title={title}>
@@ -35,7 +39,7 @@ const LogoSchool: React.FC = () => {
                   cx="82.44"
                   cy="533.32"
                   r="22.61"
-                  style={{ fill: "#c4332d" }}
+                  style={{ fill: ColorLogo.red }}
                 />
               </clipPath>
               <clipPath id="clip-path-3" transform="translate(-3.75 -5.23)">
@@ -43,7 +47,7 @@ const LogoSchool: React.FC = () => {
                   cx="600.35"
                   cy="146.95"
                   r="22.61"
-                  style={{ fill: "#c4332d" }}
+                  style={{ fill: ColorLogo.red }}
                 />
               </clipPath>
               <clipPath id="clip-path-4" transform="translate(-3.75 -5.23)">
@@ -51,7 +55,7 @@ const LogoSchool: React.FC = () => {
                   cx="135.64"
                   cy="27.84"
                   r="22.61"
-                  style={{ fill: "#c4332d" }}
+                  style={{ fill: ColorLogo.red }}
                 />
               </clipPath>
             </defs>
@@ -61,37 +65,37 @@ const LogoSchool: React.FC = () => {
                   <path
                     d="M495.64,334c72.12,35.52,115.18,73.35,107.7,100.82-8.6,31.61-81.83,41.13-181.68,28.5a563.15,563.15,0,0,0-14.38-56.16A927.72,927.72,0,0,0,495.64,334Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#fc0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                   <path
                     d="M596.61,149.56c23.68,33.84-19.14,107.25-101,184.4-38.89-19.13-86.21-37.62-138.61-53.43q-4.83-10.11-10-20.33-11.24-22.23-23-43.07C451.87,139.15,568,108.66,596.61,149.56Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#fc0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                   <path
                     d="M421.66,463.28c10.88,55.29,7.32,94.63-13.3,105-25.63,12.94-71.61-21.93-120.79-85.72C306,472.83,324.88,461.94,344,450,371.12,455.76,397.19,460.18,421.66,463.28Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#fc0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                   <path
                     d="M407.28,407.12q-9.12,6.69-18.55,13.28c-15,10.47-29.91,20.35-44.72,29.61-19.94-4.23-40.43-9.19-61.26-14.86q-18-4.92-35.41-10.26c-17.21-27.05-34.24-57-50.38-89q-4.82-9.53-9.35-19c23.17-20.24,48.83-40.52,76.48-60.21,20.51,4.3,41.61,9.38,63.08,15.23q15.18,4.13,29.86,8.56C378.42,325.16,395.36,368.33,407.28,407.12Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#fc0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                   <path
                     d="M324.09,217.13c-17.58,10.72-35.38,22.35-53.19,34.81l-6.81,4.8c-39.34-8.29-76.44-13.75-109.61-16.4-41.57-108.6-51.18-196.18-18.84-212.5C173,9,253.44,91.52,324.09,217.13Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#fc0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                   <path
                     d="M247.34,424.89c13.41,21.1,26.94,40.46,40.23,57.7C179.68,539.81,88,558.5,63,522.79,43.48,494.86,69.24,440,124.86,378.24,160.19,394.9,201.78,410.89,247.34,424.89Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#fc0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                   <path
                     d="M154.48,240.34C163.92,265,175,290.72,187.61,317a740.68,740.68,0,0,0-62.75,61.29C46.41,341.29-1.26,301.13,6.59,272.35,14.18,244.42,72.22,233.74,154.48,240.34Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#fc0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                 </g>
                 <g>
@@ -100,7 +104,7 @@ const LogoSchool: React.FC = () => {
                     transform="translate(-3.75 -5.23)"
                     style={{
                       fill: "none",
-                      stroke: "#c4332d",
+                      stroke: ColorLogo.red,
                       strokeMiterlimit: "10",
                       strokeWidth: "4px",
                     }}
@@ -110,7 +114,7 @@ const LogoSchool: React.FC = () => {
                     transform="translate(-3.75 -5.23)"
                     style={{
                       fill: "none",
-                      stroke: "#c4332d",
+                      stroke: ColorLogo.red,
                       strokeMiterlimit: "10",
                       strokeWidth: "4px",
                     }}
@@ -120,7 +124,7 @@ const LogoSchool: React.FC = () => {
                     transform="translate(-3.75 -5.23)"
                     style={{
                       fill: "none",
-                      stroke: "#c4332d",
+                      stroke: ColorLogo.red,
                       strokeMiterlimit: "10",
                       strokeWidth: "4px",
                     }}
@@ -179,7 +183,7 @@ const LogoSchool: React.FC = () => {
                   cx="78.69"
                   cy="528.08"
                   r="22.61"
-                  style={{ fill: "#c4332d" }}
+                  style={{ fill: ColorLogo.red }}
                 />
                 <g style={{ clipPath: "url(#clip-path-2)" }}>
                   <path
@@ -190,7 +194,7 @@ const LogoSchool: React.FC = () => {
                   <path
                     d="M68,523.5c-2.58,4.44-3.06,9-1.07,10.13s11.31-15,9.33-16.1S70.59,519.05,68,523.5Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#ff0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                 </g>
               </g>
@@ -201,7 +205,7 @@ const LogoSchool: React.FC = () => {
                   cx="596.6"
                   cy="141.71"
                   r="22.61"
-                  style={{ fill: "#c4332d" }}
+                  style={{ fill: ColorLogo.red }}
                 />
                 <g style={{ clipPath: "url(#clip-path-3)" }}>
                   <path
@@ -212,7 +216,7 @@ const LogoSchool: React.FC = () => {
                   <path
                     d="M585.93,137.13c-2.58,4.44-3.06,9-1.07,10.13s11.31-14.95,9.32-16.1S588.5,132.68,585.93,137.13Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#ff0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                 </g>
               </g>
@@ -223,7 +227,7 @@ const LogoSchool: React.FC = () => {
                   cx="131.89"
                   cy="22.61"
                   r="22.61"
-                  style={{ fill: "#c4332d" }}
+                  style={{ fill: ColorLogo.red }}
                 />
                 <g style={{ clipPath: "url(#clip-path-4)" }}>
                   <path
@@ -234,7 +238,7 @@ const LogoSchool: React.FC = () => {
                   <path
                     d="M121.22,18c-2.58,4.44-3.06,9-1.07,10.13s11.31-14.95,9.32-16.1S123.79,13.57,121.22,18Z"
                     transform="translate(-3.75 -5.23)"
-                    style={{ fill: "#ff0" }}
+                    style={{ fill: ColorLogo.yel }}
                   />
                 </g>
               </g>

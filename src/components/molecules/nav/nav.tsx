@@ -11,13 +11,18 @@ const dataButton: dataButtonType = {
   icon: <InfoOutlinedIcon fontSize="large" />,
 };
 
-const Nav: React.FC = () => {
+const Nav: React.FC<{ name: Array<string> }> = (name) => {
+  const { title, text }: { title: string; text: string } = {
+    title: "Увековечение памяти",
+    text: `Памяти ${name.name[1].slice(0, -1)}я  ${name.name[0]}а`,
+  };
+
   return (
     <St.Nav>
       <LogoSchool />
-      <Tooltip title="Увековечение памяти">
+      <Tooltip title={title}>
         <Link component="button" underline="hover" color="#a4783e">
-          <St.LogoText>Памяти Дмитрия Карповича</St.LogoText>
+          <St.LogoText>{text}</St.LogoText>
         </Link>
       </Tooltip>
       <Button dataButton={dataButton} />

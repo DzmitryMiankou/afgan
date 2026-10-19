@@ -1,14 +1,11 @@
 import React from "react";
-import { TitleTs } from "../../../App";
 import { St } from "./mainPage.style";
-
 import Person from "../../../img/IMG3_7745.jpg";
 import SEDG2 from "../../../img/post-letter-boxes-mailbox-blue.png";
 import Tooltip from "@mui/material/Tooltip";
 
 interface MainPageProps {
   data: {
-    biography: TitleTs;
     hightHeader: number;
   };
 }
@@ -28,8 +25,7 @@ const SvgWrapper = React.forwardRef<SVGGElement, SvgWrapperProps>(
 );
 
 const MainPage: React.FC<MainPageProps> = ({ data }) => {
-  const { hightHeader, biography } = data;
-  const { firstName, patronymic, lastName } = biography;
+  const { hightHeader } = data;
 
   return (
     <St.Container $hightHeader={hightHeader}>
