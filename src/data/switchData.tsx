@@ -1,4 +1,5 @@
 import { TypeInfo } from "../redux/openInfoReducer/openInfoReducer";
+import Info from "./Info";
 import Pinfo from "./Pinfo";
 
 type INFO_CONTENT_MAP_TYPE = Record<
@@ -11,7 +12,7 @@ export const INFO_CONTENT_MAP: INFO_CONTENT_MAP_TYPE = {
   history: { title: "Источники проекта", element: <Pinfo /> },
   memory: { title: "Увековечивание памяти", element: <Pinfo /> },
   schoolData: { title: "Применение в школе", element: <Pinfo /> },
-  info: { title: "Информация о проекте", element: <Pinfo /> },
+  info: { title: "Информация о проекте", element: <Info /> },
   war: { title: "Информация о войне", element: <Pinfo /> },
   err: { title: "error", element: <></> },
 };
