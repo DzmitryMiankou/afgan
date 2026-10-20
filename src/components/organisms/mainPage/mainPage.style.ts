@@ -10,15 +10,21 @@ const Container = styled.div<{
   $hightHeader: number;
 }>`
   ${Wrapper};
-  max-height: calc(100% - ${(props) => props.$hightHeader}px);
-  height: 100%;
-  display: grid;
-  align-items: flex-end;
+  height: calc(100% - ${(props) => props.$hightHeader}px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 `;
 
 const Img = styled.svg`
   width: 100%;
-  height: 90%;
+  height: auto;
+  max-height: 85vh;
+  display: block;
+  margin-top: auto;
 `;
 
 const TextSvg = styled.text`

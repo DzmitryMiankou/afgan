@@ -50,7 +50,7 @@ const theme = createTheme({
     MuiDialog: {
       styleOverrides: {
         paper: {
-          maxWidth: "70%",
+          maxWidth: "50%",
         },
       },
     },
