@@ -5,6 +5,7 @@ import SHTURM1 from "../img/Afgan1987_Gardez_UAZ469.jpg";
 import SHTURM2 from "../img/October_87_-_Khalis-loyal_Muja.jpg";
 import SHTURM3 from "../img/RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg";
 import SHTURM4 from "../img/Evstafiev-spetsnaz-prepare-for-mission.jpg";
+import ReactPlayer from "react-player";
 
 const War: React.FC = () => {
   return (
@@ -147,6 +148,16 @@ const War: React.FC = () => {
         заключается в том, что 40-я армия делала то, что считала нужным, а
         душманы - лишь то, что могли».<i>[2]</i>.
       </St.Text>
+      <div style={{ width: "100%", maxWidth: "600px", aspectRatio: "16/9" }}>
+        <ReactPlayer
+          controls={true}
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+          src="https://www.youtube.com/watch?v=cU8cXyVE0Ig" // <--- THIS IS THE PROBLEM
+        />
+      </div>
       <St.Figu>
         <St.Img
           src={SHTURM3}
