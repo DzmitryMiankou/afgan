@@ -9,6 +9,7 @@ import {
   setOpenReducer,
   TypeInfo,
 } from "../../../redux/openInfoReducer/openInfoReducer";
+import { INFO_CONTENT_MAP } from "../../../data/switchData";
 
 interface MainPageProps {
   data: {
@@ -38,6 +39,8 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
   const setStore = (type: TypeInfo) =>
     dispatchStore(setOpenReducer(true, type));
 
+  const TITLE = (type: TypeInfo) => INFO_CONTENT_MAP[type].title;
+
   return (
     <St.Container $hightHeader={hightHeader}>
       <St.Img
@@ -50,7 +53,7 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
         enableBackground="new 0 0 1366 768"
         xmlSpace="preserve"
       >
-        <Tooltip title="Информация обо мне">
+        <Tooltip title={TITLE("person")}>
           <SvgWrapper>
             <St.PImage onClick={() => setStore("person")}>
               <defs>
@@ -154,7 +157,7 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
           </tspan>
           <tspan x="0" dy="1.3em">
             а о сержанте
-            <Tooltip title="История конфликта">
+            <Tooltip title={TITLE("war")}>
               <St.WarText onClick={() => setStore("war")}>
                 {" "}
                 афганской войны
@@ -162,7 +165,7 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
             </Tooltip>
           </tspan>
         </St.TextSvg>
-        <Tooltip title="Мои письма">
+        <Tooltip title={TITLE("mail")}>
           <SvgWrapper>
             <St.EmailImage
               onClick={() => setStore("mail")}

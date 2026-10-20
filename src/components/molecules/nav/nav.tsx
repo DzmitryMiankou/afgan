@@ -6,26 +6,32 @@ import Link from "@mui/material/Link";
 import Tooltip from "@mui/material/Tooltip";
 import { useDispatch } from "react-redux";
 import { AppDispatch } from "../../../redux/store";
-import { setOpenReducer } from "../../../redux/openInfoReducer/openInfoReducer";
+import {
+  setOpenReducer,
+  TypeInfo,
+} from "../../../redux/openInfoReducer/openInfoReducer";
 import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import { INFO_CONTENT_MAP } from "../../../data/switchData";
+
+const TITLE = (type: TypeInfo) => INFO_CONTENT_MAP[type].title;
 
 const dataButton: dataButtonType = {
-  titleButton: "Информация о проекте",
+  titleButton: TITLE("info"),
   arialButton: "info",
   icon: <InfoOutlinedIcon fontSize="large" />,
   infoType: "info",
 };
 
 const istData: dataButtonType = {
-  titleButton: "Источники",
+  titleButton: TITLE("history"),
   arialButton: "history",
   icon: <AutoStoriesOutlinedIcon fontSize="large" />,
   infoType: "history",
 };
 
 const schoolData: dataButtonType = {
-  titleButton: "Методика",
+  titleButton: TITLE("schoolData"),
   arialButton: "schoolData",
   icon: <SchoolOutlinedIcon fontSize="large" />,
   infoType: "schoolData",
@@ -34,7 +40,7 @@ const schoolData: dataButtonType = {
 const Nav: React.FC<{ name: Array<string> }> = (name) => {
   const dispatchStore = useDispatch<AppDispatch>();
   const { title, text }: { title: string; text: string } = {
-    title: "Увековечение памяти",
+    title: TITLE("memory"),
     text: `Памяти ${name.name[1].slice(0, -1)}я  ${name.name[0]}а`,
   };
 
