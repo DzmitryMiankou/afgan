@@ -160,7 +160,7 @@ const MainPage: React.FC<MainPageProps> = ({ data }) => {
             <Tooltip title={TITLE("war")}>
               <St.WarText onClick={() => setStore("war")}>
                 {" "}
-                афганской войны
+                Афганской войны
               </St.WarText>
             </Tooltip>
           </tspan>
