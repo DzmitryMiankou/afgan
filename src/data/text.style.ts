@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Text = styled.p`
   text-indent: 30px;
+  text-align: justify;
 `;
 const TextBlock = styled.div`
   font-size: 18px;

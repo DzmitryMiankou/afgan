@@ -3,6 +3,7 @@ import { St } from "./text.style";
 import IMG1 from "../img/2fsg.jpg";
 import IMG2 from "../img/sdbsd.jpg";
 import IMG3 from "../img/dsbfdngfh6.jpg";
+import { CRITICAL_IMAGES } from "./imagesList";
 
 const Pinfo: React.FC = () => {
   return (
@@ -39,6 +40,10 @@ const Pinfo: React.FC = () => {
         <St.Img src={IMG3} alt="Служба в Афганистане" />
         <St.Figurca>Служба в Афганистане</St.Figurca>
       </St.Figu>
+      <St.Figu>
+        <St.Img src={IMG2} alt="Служба в Афганистане" />
+        <St.Figurca>Служба в Афганистане</St.Figurca>
+      </St.Figu>
       <St.Text>
         В марте 1988 года при выполнении боевого задания сержант Д. К. Карпович
         получил тяжелое ранение ноги, которое впоследствии привело к развитию
@@ -46,8 +51,12 @@ const Pinfo: React.FC = () => {
         Ташкенте и Москве (в госпитале имени Н. Н. Бурденко).
       </St.Text>
       <St.Figu>
-        <St.Img src={IMG2} alt="Служба в Афганистане" />
-        <St.Figurca>Служба в Афганистане</St.Figurca>
+        <St.Img src={CRITICAL_IMAGES[5]} alt="В госпитале" />
+        <St.Figurca>В госпитале</St.Figurca>
+      </St.Figu>
+      <St.Figu>
+        <St.Img src={CRITICAL_IMAGES[7]} alt="В госпитале" />
+        <St.Figurca>В госпитале</St.Figurca>
       </St.Figu>
       <St.Text>Скончался 27 октября 1988 года. Похоронен в Молодечно.</St.Text>
       <St.Text>
