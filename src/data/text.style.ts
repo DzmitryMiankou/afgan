@@ -8,9 +8,10 @@ const TextBlock = styled.div`
   font-size: 18px;
 `;
 
-const Img = styled.img`
-  max-width: 600px;
+const Img = styled.img<{ $sizeMax?: number }>`
+  max-width: ${(props) => props.$sizeMax ?? 600}px;
   width: 100%;
+  height: auto;
 `;
 
 const Figu = styled.figure`
