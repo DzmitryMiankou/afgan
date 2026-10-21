@@ -83,3 +83,42 @@ body {
     scroll-behavior: auto !important;
   }
 }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc; /* светлая граница */
+  border-top: 4px solid #333; /* тёмная часть, создающая эффект вращения */
+  border-radius: 50%;
+  animation: css-animation-spin 1s linear infinite; /* бесконечное вращение */
+  margin: 20px auto; /* выравнивание по центру */
+}
+
+.loader {
+  font-size: 40px;
+  overflow: hidden;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes css-animation-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

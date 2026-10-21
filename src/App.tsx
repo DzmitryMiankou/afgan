@@ -27,22 +27,9 @@ const App: React.FC = () => {
   return (
     <>
       {!imagesLoaded && (
-        <div
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
-            backgroundColor: "#ffffff",
-            zIndex: 9999,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            fontSize: "40px",
-          }}
-        >
-          Загрузка...
+        <div className="loader">
+          <div className="spinner"></div>
+          <p>Загрузка...</p>
         </div>
       )}
 

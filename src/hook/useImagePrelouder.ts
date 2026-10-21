@@ -13,18 +13,15 @@ export function useImagePreloader(imageUrls: string[]): boolean {
 
     const onImageLoadOrError = (): void => {
       pending -= 1;
-      if (pending === 0) {
-        setIsReady(true);
-      }
+      if (pending === 0) setIsReady(true);
     };
 
     imageUrls.forEach((url: string) => {
       const img: HTMLImageElement = new Image();
       img.src = url;
 
-      if (img.complete) {
-        onImageLoadOrError();
-      } else {
+      if (img.complete) onImageLoadOrError();
+      else {
         img.onload = onImageLoadOrError;
         img.onerror = onImageLoadOrError;
       }
