@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/afgan/static/css/main.98fcbc33.css",
-    "main.js": "/afgan/static/js/main.6666a712.js",
+    "main.js": "/afgan/static/js/main.d4dd3806.js",
     "reactPlayerHls.js": "/afgan/static/js/reactPlayerHls.ec43ae10.chunk.js",
     "reactPlayerDash.js": "/afgan/static/js/reactPlayerDash.1b989d02.chunk.js",
     "reactPlayerMux.js": "/afgan/static/js/reactPlayerMux.b17ccd47.chunk.js",
@@ -16,22 +16,26 @@
     "static/js/416.b3ba65f6.chunk.js": "/afgan/static/js/416.b3ba65f6.chunk.js",
     "static/js/365.30f47985.chunk.js": "/afgan/static/js/365.30f47985.chunk.js",
     "static/js/788.ecdc0728.chunk.js": "/afgan/static/js/788.ecdc0728.chunk.js",
+    "static/media/22sewfrge.jpg": "/afgan/static/media/22sewfrge.265b06286564be2bf4d1.jpg",
+    "static/media/post-letter-boxes-mailbox-blue.png": "/afgan/static/media/post-letter-boxes-mailbox-blue.f72a7e648b0321ae07d4.png",
     "static/media/Mountains_surrounding_Bagram_Air_Field.png": "/afgan/static/media/Mountains_surrounding_Bagram_Air_Field.05424ec4356fddf847b0.png",
-    "static/media/post-letter-boxes-mailbox-blue.png": "/afgan/static/media/post-letter-boxes-mailbox-blue.79ad1b306946c937d1d2.png",
     "static/media/sdbsd.jpg": "/afgan/static/media/sdbsd.35785ee240e10f45efb6.jpg",
     "static/media/RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.jpg": "/afgan/static/media/RIAN_archive_58833_Withdrawal_of_Soviet_troops_from_Afghanistan.a3f43e6518f58bf91efb.jpg",
     "static/media/dsbfdngfh6.jpg": "/afgan/static/media/dsbfdngfh6.482c2136fddc18b929e1.jpg",
     "static/media/4gfnry.jpg": "/afgan/static/media/4gfnry.ef364459ba5ebef13008.jpg",
-    "static/media/2fsg.jpg": "/afgan/static/media/2fsg.29e4a6340df5e09924db.jpg",
+    "static/media/mme.png": "/afgan/static/media/mme.95b42bb4f1a0a22cae38.png",
+    "static/media/2fsg.jpg": "/afgan/static/media/2fsg.c28f565d8bfe7e519d38.jpg",
     "static/media/IMG3_7745.jpg": "/afgan/static/media/IMG3_7745.62ab1f6a4ed813d9ff38.jpg",
     "static/media/October_87_-_Khalis-loyal_Muja.jpg": "/afgan/static/media/October_87_-_Khalis-loyal_Muja.f43acc17426b9cfd7b1d.jpg",
+    "static/media/photo_2026-10-21_22-24-24.jpg": "/afgan/static/media/photo_2026-10-21_22-24-24.7f8cfc7c2662f6157fab.jpg",
     "static/media/shturm.jpg": "/afgan/static/media/shturm.6acfe0d92e56f321a3b4.jpg",
     "static/media/Evstafiev-spetsnaz-prepare-for-mission.jpg": "/afgan/static/media/Evstafiev-spetsnaz-prepare-for-mission.a4fdbf6540989d58522f.jpg",
     "static/media/Afgan1987_Gardez_UAZ469.jpg": "/afgan/static/media/Afgan1987_Gardez_UAZ469.301e5635f223a97ad3d9.jpg",
+    "static/media/photo_2026-10-21_22-24-26.jpg": "/afgan/static/media/photo_2026-10-21_22-24-26.faf91244e33f52cf21da.jpg",
     "static/media/ds546.jpg": "/afgan/static/media/ds546.5a6be510bba8ca1a4ca1.jpg",
     "index.html": "/afgan/index.html",
     "main.98fcbc33.css.map": "/afgan/static/css/main.98fcbc33.css.map",
-    "main.6666a712.js.map": "/afgan/static/js/main.6666a712.js.map",
+    "main.d4dd3806.js.map": "/afgan/static/js/main.d4dd3806.js.map",
     "reactPlayerHls.ec43ae10.chunk.js.map": "/afgan/static/js/reactPlayerHls.ec43ae10.chunk.js.map",
     "reactPlayerDash.1b989d02.chunk.js.map": "/afgan/static/js/reactPlayerDash.1b989d02.chunk.js.map",
     "reactPlayerMux.b17ccd47.chunk.js.map": "/afgan/static/js/reactPlayerMux.b17ccd47.chunk.js.map",
@@ -49,6 +53,6 @@
   },
   "entrypoints": [
     "static/css/main.98fcbc33.css",
-    "static/js/main.6666a712.js"
+    "static/js/main.d4dd3806.js"
   ]
 }
