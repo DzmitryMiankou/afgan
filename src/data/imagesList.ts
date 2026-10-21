@@ -9,6 +9,9 @@ import Img6 from "../img/4gfnry.jpg";
 import Img7 from "../img/2fsg.jpg";
 import Img78 from "../img/shturm.jpg";
 import Img72 from "../img/22sewfrge.jpg";
+import Img723 from "../img/photo_2026-10-21_22-24-26.jpg";
+import Img7323 from "../img/photo_2026-10-21_22-24-24.jpg";
+import Img323 from "../img/mme.png";
 
 export const CRITICAL_IMAGES: string[] = [
   Person,
@@ -22,4 +25,7 @@ export const CRITICAL_IMAGES: string[] = [
   Img7,
   Img78,
   Img72,
+  Img723,
+  Img7323,
+  Img323,
 ];
