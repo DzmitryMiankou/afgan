@@ -15,6 +15,9 @@ import Img323 from "../img/mme.png";
 import Img333 from "../img/dtok70e1ulce9whcnrm4jabkgroiwifc.jpg";
 import Img3333 from "../img/photo_2026-10-22_09-58-54.jpg";
 import Img33 from "../img/photo_2026-10-21_22-24-25.jpg";
+import MAIL1 from "../img/mail1.jpg";
+import MAIL2 from "../img/mail2.jpg";
+import MAIL3 from "../img/mail3.jpg";
 
 export const CRITICAL_IMAGES: string[] = [
   Person,
@@ -34,4 +37,7 @@ export const CRITICAL_IMAGES: string[] = [
   Img333,
   Img3333,
   Img33,
+  MAIL1,
+  MAIL2,
+  MAIL3,
 ];
