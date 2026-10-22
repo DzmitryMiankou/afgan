@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/afgan/static/css/main.5f412161.css",
-    "main.js": "/afgan/static/js/main.dd37d329.js",
+    "main.js": "/afgan/static/js/main.d301680b.js",
     "reactPlayerHls.js": "/afgan/static/js/reactPlayerHls.ec43ae10.chunk.js",
     "reactPlayerDash.js": "/afgan/static/js/reactPlayerDash.1b989d02.chunk.js",
     "reactPlayerMux.js": "/afgan/static/js/reactPlayerMux.b17ccd47.chunk.js",
@@ -43,7 +43,7 @@
     "static/media/2fsg.jpg": "/afgan/static/media/2fsg.cefa6e739d93c06016b8.jpg",
     "index.html": "/afgan/index.html",
     "main.5f412161.css.map": "/afgan/static/css/main.5f412161.css.map",
-    "main.dd37d329.js.map": "/afgan/static/js/main.dd37d329.js.map",
+    "main.d301680b.js.map": "/afgan/static/js/main.d301680b.js.map",
     "reactPlayerHls.ec43ae10.chunk.js.map": "/afgan/static/js/reactPlayerHls.ec43ae10.chunk.js.map",
     "reactPlayerDash.1b989d02.chunk.js.map": "/afgan/static/js/reactPlayerDash.1b989d02.chunk.js.map",
     "reactPlayerMux.b17ccd47.chunk.js.map": "/afgan/static/js/reactPlayerMux.b17ccd47.chunk.js.map",
@@ -61,6 +61,6 @@
   },
   "entrypoints": [
     "static/css/main.5f412161.css",
-    "static/js/main.dd37d329.js"
+    "static/js/main.d301680b.js"
   ]
 }
