@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/afgan/static/css/main.98fcbc33.css",
-    "main.js": "/afgan/static/js/main.d4dd3806.js",
+    "main.js": "/afgan/static/js/main.62860074.js",
     "reactPlayerHls.js": "/afgan/static/js/reactPlayerHls.ec43ae10.chunk.js",
     "reactPlayerDash.js": "/afgan/static/js/reactPlayerDash.1b989d02.chunk.js",
     "reactPlayerMux.js": "/afgan/static/js/reactPlayerMux.b17ccd47.chunk.js",
@@ -26,16 +26,19 @@
     "static/media/mme.png": "/afgan/static/media/mme.95b42bb4f1a0a22cae38.png",
     "static/media/2fsg.jpg": "/afgan/static/media/2fsg.c28f565d8bfe7e519d38.jpg",
     "static/media/IMG3_7745.jpg": "/afgan/static/media/IMG3_7745.62ab1f6a4ed813d9ff38.jpg",
+    "static/media/photo_2026-10-21_22-24-25.jpg": "/afgan/static/media/photo_2026-10-21_22-24-25.45cc9a90fdc64b748da3.jpg",
     "static/media/October_87_-_Khalis-loyal_Muja.jpg": "/afgan/static/media/October_87_-_Khalis-loyal_Muja.f43acc17426b9cfd7b1d.jpg",
     "static/media/photo_2026-10-21_22-24-24.jpg": "/afgan/static/media/photo_2026-10-21_22-24-24.7f8cfc7c2662f6157fab.jpg",
+    "static/media/photo_2026-10-22_09-58-54.jpg": "/afgan/static/media/photo_2026-10-22_09-58-54.2a3c401b060c5212c11a.jpg",
     "static/media/shturm.jpg": "/afgan/static/media/shturm.6acfe0d92e56f321a3b4.jpg",
+    "static/media/dtok70e1ulce9whcnrm4jabkgroiwifc.jpg": "/afgan/static/media/dtok70e1ulce9whcnrm4jabkgroiwifc.e2bc711c9e136ef92465.jpg",
     "static/media/Evstafiev-spetsnaz-prepare-for-mission.jpg": "/afgan/static/media/Evstafiev-spetsnaz-prepare-for-mission.a4fdbf6540989d58522f.jpg",
     "static/media/Afgan1987_Gardez_UAZ469.jpg": "/afgan/static/media/Afgan1987_Gardez_UAZ469.301e5635f223a97ad3d9.jpg",
     "static/media/photo_2026-10-21_22-24-26.jpg": "/afgan/static/media/photo_2026-10-21_22-24-26.faf91244e33f52cf21da.jpg",
     "static/media/ds546.jpg": "/afgan/static/media/ds546.5a6be510bba8ca1a4ca1.jpg",
     "index.html": "/afgan/index.html",
     "main.98fcbc33.css.map": "/afgan/static/css/main.98fcbc33.css.map",
-    "main.d4dd3806.js.map": "/afgan/static/js/main.d4dd3806.js.map",
+    "main.62860074.js.map": "/afgan/static/js/main.62860074.js.map",
     "reactPlayerHls.ec43ae10.chunk.js.map": "/afgan/static/js/reactPlayerHls.ec43ae10.chunk.js.map",
     "reactPlayerDash.1b989d02.chunk.js.map": "/afgan/static/js/reactPlayerDash.1b989d02.chunk.js.map",
     "reactPlayerMux.b17ccd47.chunk.js.map": "/afgan/static/js/reactPlayerMux.b17ccd47.chunk.js.map",
@@ -53,6 +56,6 @@
   },
   "entrypoints": [
     "static/css/main.98fcbc33.css",
-    "static/js/main.d4dd3806.js"
+    "static/js/main.62860074.js"
   ]
 }
