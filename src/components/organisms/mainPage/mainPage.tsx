@@ -17,7 +17,6 @@ interface MainPageProps {
     hightHeader: number;
   };
 }
-
 type SvgWrapperProps = React.SVGProps<SVGGElement> & {
   children: React.ReactNode;
 };

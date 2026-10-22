@@ -1,10 +1,8 @@
 import React from "react";
 import { St } from "./TimeLine.style";
-
 import { SvgWrapper } from "../../organisms/mainPage/mainPage";
 import Tooltip from "@mui/material/Tooltip";
 
-const ColorTimline = { bgTool: "#ffdebd" } as const;
 const TIMLINEACTION = [
   {
     d: "M945.1,629.8h-40.6c-6.6,0-12-5.4-12-12V609c0-6.6,5.4-12,12-12 h40.6c6.6,0,12,5.4,12,12v8.8C957.1,624.4,951.7,629.8,945.1,629.8z",
@@ -25,7 +23,7 @@ const TIMLINEACTION = [
     transform: "matrix(1 0 0 1 1278.326 693.8015)",
     year: 1989,
     cx: 1188.8,
-    toolTip: "Умер 27 октября 1988 года",
+    toolTip: "Вывод советских войск из Афганистана",
   },
   {
     d: "M1140.6,629.8H1100c-6.6,0-12-5.4-12-12V609c0-6.6,5.4-12,12-12 h40.6c6.6,0,12,5.4,12,12v8.8C1152.6,624.4,1147.2,629.8,1140.6,629.8z",
@@ -39,7 +37,7 @@ const TIMLINEACTION = [
     transform: "matrix(1 0 0 1 1231.4915 622.4731)",
     year: 1988,
     cx: 1300.7,
-    toolTip: "В марте 1988 года был тяжело ранен",
+    toolTip: "В марте 1988 года был тяжело ранен. Умер 27 октября 1988 года",
   },
 ] as const;
 
@@ -70,7 +68,6 @@ const TimeLine: React.FC = () => {
         x2="1300.7"
         y2="646.7"
       />
-
       {TIMLINEACTION.map(({ d, year, transform, cx, toolTip }) => (
         <React.Fragment key={year + "srd324__45ryrd"}>
           <circle
@@ -85,7 +82,7 @@ const TimeLine: React.FC = () => {
             <Tooltip title={toolTip} placement="top">
               <SvgWrapper>
                 <path
-                  fill={ColorTimline.bgTool}
+                  fill="#ffdebd"
                   stroke="#F15A24"
                   strokeMiterlimit={10}
                   d={d}
