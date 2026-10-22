@@ -58,9 +58,9 @@ const Nav: React.FC<{ name: Array<string> }> = (name) => {
         </Link>
       </Tooltip>
       <div style={{ display: "flex", gap: "5px", marginLeft: "5px" }}>
-        <Button dataButton={istData} />
-        <Button dataButton={schoolData} />
-        <Button dataButton={dataButton} />
+        {[istData, schoolData, dataButton].map((data, index) => (
+          <Button key={index} dataButton={data} />
+        ))}
       </div>
     </St.Nav>
   );
