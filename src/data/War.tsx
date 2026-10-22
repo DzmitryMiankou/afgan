@@ -27,7 +27,14 @@ const War: React.FC = () => {
       <St.Text>
         Разрядка была сорвана после того, как на Западе началась кампания
         вподдержку прав человека в СССР, а Советский Союз ввел свои войска в
-        Афганистан вдекабре 1979г.<i>[1, c.185]</i>.
+        Афганистан вдекабре 1979г.
+        <a
+          href="https://adukar.com/images/photo/vs_ist_noveishego_vremeni_Koshelev_9kl_2019.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          [c.185]
+        </a>
       </St.Text>
 
       <St.Text>
@@ -146,7 +153,14 @@ const War: React.FC = () => {
         Родину. Если в качестве основного противника Ограниченного контингента
         рассматривать вооруженные отряды оппозиции, то различие между нами
         заключается в том, что 40-я армия делала то, что считала нужным, а
-        душманы - лишь то, что могли».<i>[2]</i>.
+        душманы - лишь то, что могли».
+        <a
+          href="https://xn--c1anggbdpdf.xn--p1ai/history/241350/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          источник
+        </a>
       </St.Text>
       <div style={{ width: "100%", maxWidth: "600px", aspectRatio: "16/9" }}>
         <ReactPlayer
@@ -155,7 +169,7 @@ const War: React.FC = () => {
             width: "100%",
             height: "100%",
           }}
-          src="https://www.youtube.com/watch?v=cU8cXyVE0Ig" // <--- THIS IS THE PROBLEM
+          src="https://www.youtube.com/watch?v=cU8cXyVE0Ig" //
         />
       </div>
       <St.Figu>

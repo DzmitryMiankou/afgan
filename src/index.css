@@ -53,7 +53,9 @@ img {
   max-width: 100%;
   display: block;
 }
-
+ul {
+  margin-left: 30px;
+}
 input,
 button,
 textarea,
