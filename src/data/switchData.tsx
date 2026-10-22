@@ -14,7 +14,7 @@ export const INFO_CONTENT_MAP: INFO_CONTENT_MAP_TYPE = {
   person: { title: "Биографическая информация", element: <Pinfo /> },
   mail: { title: "Письма домой", element: <Mail /> },
   history: { title: "Источники проекта", element: <History /> },
-  memory: { title: "Увековечивание памяти", element: <Memory /> },
+  memory: { title: "Увековечение памяти", element: <Memory /> },
   schoolData: { title: "Применение в школе", element: <School /> },
   info: { title: "Информация о проекте", element: <Info /> },
   war: { title: "Информация о войне", element: <War /> },
