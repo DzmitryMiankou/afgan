@@ -20,6 +20,7 @@
     "@types/styled-components": "^5.1.36",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
+    "react-h5-audio-player": "^3.10.2",
     "react-player": "^3.4.0",
     "react-redux": "^9.3.0",
     "react-router-dom": "^7.18.4",

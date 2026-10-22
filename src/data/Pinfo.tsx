@@ -3,11 +3,19 @@ import { St } from "./text.style";
 import IMG1 from "../img/2fsg.jpg";
 import IMG2 from "../img/sdbsd.jpg";
 import IMG3 from "../img/dsbfdngfh6.jpg";
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import myAudio from "../img/audio_2026-10-22_21-26-03.mp3";
 import { CRITICAL_IMAGES } from "./imagesList";
 
 const Pinfo: React.FC = () => {
   return (
     <St.TextBlock>
+      <AudioPlayer
+        header={"Рассказ Леонарды Ивановны о своем сыне, Дмитрии Карповиче"}
+        src={myAudio}
+        showJumpControls={false}
+      />
       <St.Text>
         Дмитрий Константинович Карпович родился 30 августа 1967 года в Молодечно
         (Минская область). Состоял в ВЛКСМ.

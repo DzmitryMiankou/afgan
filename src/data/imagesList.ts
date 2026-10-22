@@ -18,6 +18,10 @@ import Img33 from "../img/photo_2026-10-21_22-24-25.jpg";
 import MAIL1 from "../img/mail1.jpg";
 import MAIL2 from "../img/mail2.jpg";
 import MAIL3 from "../img/mail3.jpg";
+import SC from "../img/rehdtjf.jpg";
+import SC2 from "../img/sdbsd.jpg";
+import SC32 from "../img/Evstafiev-spetsnaz-prepare-for-mission.jpg";
+import C32 from "../img/Afgan1987_Gardez_UAZ469.jpg";
 
 export const CRITICAL_IMAGES: string[] = [
   Person,
@@ -40,4 +44,8 @@ export const CRITICAL_IMAGES: string[] = [
   MAIL1,
   MAIL2,
   MAIL3,
+  SC,
+  SC2,
+  SC32,
+  C32,
 ];
